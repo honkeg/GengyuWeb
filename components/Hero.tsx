@@ -1,60 +1,57 @@
 
 import React from 'react';
-import { Rocket, ChevronRight } from 'lucide-react';
+import { ChevronRight, Sparkles } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden hero-gradient">
-      {/* Decorative Blur Elements */}
-      <div className="absolute top-1/4 -right-20 w-96 h-96 bg-blue-400 opacity-20 blur-3xl rounded-full"></div>
-      <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-purple-400 opacity-20 blur-3xl rounded-full"></div>
-
+    <section id="home" className="relative min-h-[90vh] flex items-center pt-24 overflow-hidden hero-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="text-center md:text-left">
-            <div className="inline-flex items-center space-x-2 bg-blue-50 text-blue-700 px-4 py-1 rounded-full text-sm font-semibold mb-6 border border-blue-100">
-              <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
-              <span>引领跨境电商AI 2.0时代</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
-              智启跨境 <br />
-              <span className="gradient-text">羽动全球</span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-xl leading-relaxed">
-              厦门庚羽科技有限公司致力于将最前沿的生成式 AI 技术注入跨境贸易。从内容生成到智能营销，我们为您的品牌出海加速。
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center md:justify-start">
-              <a href="#services" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center shadow-xl hover:shadow-blue-200 transition-all hover:-translate-y-1">
-                查看核心业务 <ChevronRight className="ml-2" size={20} />
-              </a>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="text-center lg:text-left space-y-8">
+            <div className="inline-flex items-center space-x-2 bg-blue-50/50 backdrop-blur-sm text-blue-700 px-4 py-1.5 rounded-full text-sm font-bold border border-blue-100/50 animate-fade-in">
+              <Sparkles size={14} className="text-blue-600" />
+              <span>庚羽 AI：让跨境贸易更简单</span>
             </div>
             
-            <div className="mt-12 flex items-center justify-center md:justify-start space-x-6 text-gray-500">
-              <div className="flex flex-col">
-                <span className="text-2xl font-bold text-gray-900">99%+</span>
-                <span className="text-sm">翻译准确率</span>
+            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1]">
+              智联全球<br />
+              <span className="gradient-text">羽化出海</span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              厦门庚羽科技，以生成式 AI 为核心，为跨境企业打造内容生成、营销自动化与智能客服闭环。助力中国品牌高效出海，抢占全球商机。
+            </p>
+            
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="#services" className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-2xl font-bold text-lg flex items-center justify-center shadow-xl shadow-blue-500/20 transition-all hover:-translate-y-1 active:scale-95">
+                探索业务 <ChevronRight className="ml-1" size={20} />
+              </a>
+              <a href="#ai-consultant" className="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-10 py-4 rounded-2xl font-bold text-lg transition-all active:scale-95">
+                AI 咨询
+              </a>
+            </div>
+
+            <div className="flex items-center justify-center lg:justify-start gap-8 pt-4">
+              <div className="text-center lg:text-left">
+                <p className="text-2xl font-bold text-slate-900">99.5%</p>
+                <p className="text-xs text-slate-500 uppercase tracking-wider font-bold">语义准确率</p>
               </div>
-              <div className="w-px h-8 bg-gray-200"></div>
-              <div className="flex flex-col">
-                <span className="text-2xl font-bold text-gray-900">10x</span>
-                <span className="text-sm">运营效率提升</span>
-              </div>
-              <div className="w-px h-8 bg-gray-200"></div>
-              <div className="flex flex-col">
-                <span className="text-2xl font-bold text-gray-900">24/7</span>
-                <span className="text-sm">全天候响应</span>
+              <div className="w-px h-10 bg-slate-200"></div>
+              <div className="text-center lg:text-left">
+                <p className="text-2xl font-bold text-slate-900">10x</p>
+                <p className="text-xs text-slate-500 uppercase tracking-wider font-bold">交付提速</p>
               </div>
             </div>
           </div>
 
-          <div className="relative hidden md:block">
-            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+          <div className="relative hidden lg:block group">
+            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20 rounded-[3rem] blur-2xl group-hover:blur-3xl transition-all"></div>
+            <div className="relative rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" 
-                alt="AI Tech Concept" 
-                className="w-full h-auto object-cover"
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200" 
+                alt="庚羽科技 AI 视图" 
+                className="w-full aspect-[4/3] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/10 to-transparent"></div>
             </div>
           </div>
         </div>
