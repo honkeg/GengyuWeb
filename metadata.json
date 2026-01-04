@@ -1,0 +1,8 @@
+{
+  "name": "庚羽科技 - 跨境AI技术服务领航者",
+  "description": "厦门庚羽科技有限公司官网，专注于为跨境企业提供尖端AI技术服务，助力中国品牌走向世界。",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
