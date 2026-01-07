@@ -11,12 +11,13 @@ export interface ServiceItem {
   icon: string;
 }
 
-export interface FeatureItem {
-  title: string;
-  description: string;
-}
-
 export interface ChatMessage {
   role: 'user' | 'model';
   text: string;
+}
+
+export interface AIConfig {
+  apiKey: string;
+  baseUrl: string;
+  model: string;
 }
